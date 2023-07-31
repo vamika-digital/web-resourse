@@ -1,0 +1,27 @@
+servers:
+  api_server:
+    address: localhost
+    port: 3000
+databases:
+  type: sqlite3
+  sqlite3:
+    dbPath: ./.wms/wms.db
+  mysql:
+    host: localhost
+    port: 3306
+    username: root
+    password: root
+    dbname: wms
+    connMaxLifetime: 3m
+    maxOpenConns: 10
+    maxIdleConns: 10
+  pgsql:
+    host: localhost
+    port: 3306
+    username: root
+    password: root
+    dbname: wms
+    connMaxLifetime: 3m
+    maxOpenConns: 10
+    maxIdleConns: 10
+    
